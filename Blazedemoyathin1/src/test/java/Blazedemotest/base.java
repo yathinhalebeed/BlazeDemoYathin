@@ -26,13 +26,13 @@ public class base {
 		fis = new FileInputStream("C:\\Users\\00004945\\eclipse-workspace\\Blazedemoyathin1\\data.properties");
 		properties.load(fis); // Loading the properties from data.properties file
 		CBrowser = properties.getProperty("Browser");//Storing the browser details read from data.properties onto CBrowser
-		URL = properties.getProperty("URL");
+		URL = properties.getProperty("URL");//Storing the URL details read from data.properties onto CBrowser
 		
 		if (CBrowser.equalsIgnoreCase("Chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Bin\\chromedriver.exe");
-			myd = new ChromeDriver();
-			myd.get(URL);
+			System.setProperty("webdriver.chrome.driver", "C:\\Bin\\chromedriver.exe");//Initializing the Driver property
+			myd = new ChromeDriver();//Browser call
+			myd.get(URL);//Url Call
 			
 		}
 		

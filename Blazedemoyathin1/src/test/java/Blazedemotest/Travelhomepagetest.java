@@ -17,7 +17,7 @@ public class Travelhomepagetest extends base {
 		myd.manage().window().maximize();
 		myd.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		String title = myd.getTitle();
-		if(title.equalsIgnoreCase("blazedemo")) {
+		if(title.equalsIgnoreCase("blazedemo")) {				//Verifying the Home page
 			
 			System.out.println("Navigated successfully to blazedemo Homepage");
 		}
@@ -26,7 +26,7 @@ public class Travelhomepagetest extends base {
 		}
 		
 		
-		Homepagevalidation hv = new Homepagevalidation(myd);
+		Homepagevalidation hv = new Homepagevalidation(myd);	//Calling the Homepagevalidation class to use the field values inside the test
 		Select select1 = new Select(hv.fromDD());
 		select1.selectByVisibleText("Boston");
 		myd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -39,7 +39,7 @@ public class Travelhomepagetest extends base {
 		myd.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
 		String Reserve = myd.getTitle();
 		
-		if(Reserve.equalsIgnoreCase("BlazeDemo - reserve")) {
+		if(Reserve.equalsIgnoreCase("BlazeDemo - reserve")) {	//Verifying the Reservation page
 			
 			System.out.println("Navigated successfully to Flight Reservation page");
 		}	
@@ -51,7 +51,7 @@ public class Travelhomepagetest extends base {
 		String flightselect = myd.getTitle();
 		if(flightselect.equalsIgnoreCase("BlazeDemo Purchase")) {
 			
-			System.out.println("Navigated successfully to Flight Purchase page");
+			System.out.println("Navigated successfully to Flight Purchase page"); //Verifying the purchase page
 		}	
 		
 		
@@ -67,8 +67,11 @@ public class Travelhomepagetest extends base {
 		pg.Purchase().submit();
 		
 		myd.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
-		String purchase = myd.getTitle();
-		System.out.println(purchase);
+		String confirmation = myd.getTitle();
+		if(confirmation.equalsIgnoreCase("BlazeDemo Confirmation")) {
+			
+			System.out.println("Navigated successfully to Flight Confirmation page");  //Verifying the confirmation page
+		}	
 		
 		
 		Confirmationpage cp = new Confirmationpage(myd);

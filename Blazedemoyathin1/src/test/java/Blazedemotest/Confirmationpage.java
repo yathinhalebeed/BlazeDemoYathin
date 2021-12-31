@@ -13,7 +13,7 @@ public class Confirmationpage {
 		this.myd = myd;
 	}
 	
-	By amount = By.xpath("/html/body/div[2]/div/table/tbody/tr[3]/td[2]");
+	By amount = By.xpath("/html/body/div[2]/div/table/tbody/tr[3]/td[2]");//Assign the amount field identification to variable
 	
 	By card = By.xpath("/html/body/div[2]/div/table/tbody/tr[4]/td[2]");
 	
@@ -21,7 +21,7 @@ public class Confirmationpage {
 
 	
 	public WebElement amount() {
-		return myd.findElement(amount);
+		return myd.findElement(amount);//Initializing the webelement for the amount field
 	}
 	
 	public WebElement card() {
