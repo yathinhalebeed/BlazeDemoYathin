@@ -30,9 +30,9 @@ public class base {
 		
 		if (CBrowser.equalsIgnoreCase("Chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Bin\\chromedriver.exe");//Initializing the Driver property
-			myd = new ChromeDriver();//Browser call
-			myd.get(URL);//Url Call
+			System.setProperty("webdriver.chrome.driver", "C:\\Bin\\chromedriver.exe");
+			myd = new ChromeDriver();
+			myd.get(URL);
 			
 		}
 		

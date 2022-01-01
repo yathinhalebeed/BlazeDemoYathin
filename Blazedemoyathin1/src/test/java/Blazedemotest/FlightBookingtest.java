@@ -2,17 +2,15 @@ package Blazedemotest;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
 
-public class Travelhomepagetest extends base {
+public class FlightBookingtest extends base {
 	
-	
-	@Test
 	public void Ts002() throws IOException, Exception {
 		
-	
+		
 		Browsercall();
 		myd.manage().window().maximize();
 		myd.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
@@ -95,7 +93,6 @@ public class Travelhomepagetest extends base {
 	{
 		myd.close();
 	}
-	
-	
 
+	
 }
