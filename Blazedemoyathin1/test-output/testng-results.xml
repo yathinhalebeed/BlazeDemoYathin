@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-31T19:17:47 IST" name="FlightBooking" finished-at="2021-12-31T19:18:01 IST" duration-ms="14308">
+  <suite started-at="2022-01-01T11:06:49 IST" name="Default suite" finished-at="2022-01-01T11:06:56 IST" duration-ms="7535">
     <groups>
     </groups>
-    <test started-at="2021-12-31T19:17:47 IST" name="Blazeflighttest" finished-at="2021-12-31T19:18:01 IST" duration-ms="14308">
-      <class name="Blazedemotest.Travelhomepagetest">
-        <test-method signature="Ts002()[pri:0, instance:Blazedemotest.Travelhomepagetest@6a84a97d]" started-at="2021-12-31T19:17:47 IST" name="Ts002" finished-at="2021-12-31T19:17:58 IST" duration-ms="10599" status="PASS">
+    <test started-at="2022-01-01T11:06:49 IST" name="Default test" finished-at="2022-01-01T11:06:56 IST" duration-ms="7535">
+      <class name="Blazedemotest.FlightBookingtest">
+        <test-method signature="Ts002()[pri:0, instance:Blazedemotest.FlightBookingtest@6a84a97d]" started-at="2022-01-01T11:06:49 IST" name="Ts002" finished-at="2022-01-01T11:06:54 IST" duration-ms="5321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Ts002 -->
-        <test-method signature="Browsercall()[pri:0, instance:Blazedemotest.Travelhomepagetest@6a84a97d]" started-at="2021-12-31T19:17:58 IST" name="Browsercall" finished-at="2021-12-31T19:18:01 IST" duration-ms="3515" status="PASS">
+        <test-method signature="Browsercall()[pri:0, instance:Blazedemotest.FlightBookingtest@6a84a97d]" started-at="2022-01-01T11:06:54 IST" name="Browsercall" finished-at="2022-01-01T11:06:56 IST" duration-ms="1893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browsercall -->
-        <test-method is-config="true" signature="Ts003()[pri:0, instance:Blazedemotest.Travelhomepagetest@6a84a97d]" started-at="2021-12-31T19:18:01 IST" name="Ts003" finished-at="2021-12-31T19:18:01 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="Ts003()[pri:0, instance:Blazedemotest.FlightBookingtest@6a84a97d]" started-at="2022-01-01T11:06:56 IST" name="Ts003" finished-at="2022-01-01T11:06:56 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Ts003 -->
-      </class> <!-- Blazedemotest.Travelhomepagetest -->
-    </test> <!-- Blazeflighttest -->
-  </suite> <!-- FlightBooking -->
+      </class> <!-- Blazedemotest.FlightBookingtest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
