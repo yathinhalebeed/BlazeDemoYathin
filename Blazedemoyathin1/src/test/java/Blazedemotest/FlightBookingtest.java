@@ -5,13 +5,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
 
 public class FlightBookingtest extends base {
 	
+	
+	@Test
 	public void Ts002() throws IOException, Exception {
 		
 		
-		Browsercall();
+		Browsercall(); //Browser call from base class
 		myd.manage().window().maximize();
 		myd.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		String title = myd.getTitle();
@@ -24,7 +28,7 @@ public class FlightBookingtest extends base {
 		}
 		
 		
-		Homepagevalidation hv = new Homepagevalidation(myd);	
+		Homepagevalidation hv = new Homepagevalidation(myd);	//Calling Homepagevalidation class with reference variable
 		Select select1 = new Select(hv.fromDD());
 		select1.selectByVisibleText("Boston");
 		myd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -43,7 +47,7 @@ public class FlightBookingtest extends base {
 		}	
 		
 		
-		Reservationpage rp = new Reservationpage(myd);
+		Reservationpage rp = new Reservationpage(myd);		//Calling Reservationpage class with reference variable
 		rp.chooseflight().click();
 		myd.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		String flightselect = myd.getTitle();
@@ -53,7 +57,7 @@ public class FlightBookingtest extends base {
 		}	
 		
 		
-		Purchasepage pg = new Purchasepage(myd);
+		Purchasepage pg = new Purchasepage(myd);			//Calling purchasepage class with reference variable
 		pg.Name().sendKeys("Yathin");
 		pg.Address().sendKeys("523 anikethana road");
 		pg.City().sendKeys("Mysore");
@@ -72,7 +76,7 @@ public class FlightBookingtest extends base {
 		}	
 		
 		
-		Confirmationpage cp = new Confirmationpage(myd);
+		Confirmationpage cp = new Confirmationpage(myd);   //Calling Confirmationpage class with reference variable
 		String amt = cp.amount().getText();
 		String Card = cp.card().getText();
 		String Exp = cp.expiration().getText();
